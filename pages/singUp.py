@@ -49,7 +49,7 @@ class Signup:
             password_input = WebDriverWait(self.driver, 10).until(
                 EC.visibility_of_element_located((self.password))
             )
-            password_input.clear()  # Clears any existing text
+            password_input.clear()
             password_input.send_keys(password)
         except Exception as e:
             print("failed to enter the password!")
@@ -61,7 +61,7 @@ class Signup:
                     EC.visibility_of_element_located((self.days))
                 )
             )
-            days_input.select_by_value("14")  # Clears any existing text
+            days_input.select_by_value("14")
         except Exception as e:
             print("Failed to set days!")
 
@@ -110,7 +110,7 @@ class Signup:
             firstname_input = WebDriverWait(self.driver, 10).until(
                 EC.visibility_of_element_located((self.first_name))
             )
-            firstname_input.clear()  # Clears any existing text
+            firstname_input.clear()
             firstname_input.send_keys(first_name)
         except Exception as e:
             print("failed to set first name!")
@@ -120,7 +120,7 @@ class Signup:
             lastname_input = WebDriverWait(self.driver, 10).until(
                 EC.visibility_of_element_located((self.last_name))
             )
-            lastname_input.clear()  # Clears any existing text
+            lastname_input.clear()
             lastname_input.send_keys(last_name)
         except Exception as e:
             print("failed to enter last name!")
@@ -139,7 +139,7 @@ class Signup:
             address1_input = WebDriverWait(self.driver, 10).until(
                 EC.visibility_of_element_located((self.address1))
             )
-            address1_input.clear()  # Clears any existing text
+            address1_input.clear()
             address1_input.send_keys(address1)
         except Exception as e:
             print("failed to set address1")
@@ -149,7 +149,7 @@ class Signup:
             address2_input = WebDriverWait(self.driver, 10).until(
                 EC.visibility_of_element_located((self.address2))
             )
-            address2_input.clear()  # Clears any existing text
+            address2_input.clear()
             address2_input.send_keys(address2)
         except Exception as e:
             print("failed to set address 2 ")
@@ -161,7 +161,7 @@ class Signup:
                     EC.visibility_of_element_located((self.country_dropdown))
                 )
             )
-            country_input.select_by_value("India")  # Clears any existing text
+            country_input.select_by_value("India")
         except Exception as e:
             print("failed to set country!")
 
@@ -170,7 +170,7 @@ class Signup:
             state_input = WebDriverWait(self.driver, 10).until(
                 EC.visibility_of_element_located((self.state))
             )
-            state_input.clear()  # Clears any existing text
+            state_input.clear()
             state_input.send_keys(state)
         except Exception as e:
             print("failed to set state!")
@@ -180,7 +180,7 @@ class Signup:
             city_input = WebDriverWait(self.driver, 10).until(
                 EC.visibility_of_element_located((self.city))
             )
-            city_input.clear()  # Clears any existing text
+            city_input.clear()
             city_input.send_keys(city)
         except Exception as e:
             print("failed to set city")
@@ -190,7 +190,7 @@ class Signup:
             zipcode_input = WebDriverWait(self.driver, 10).until(
                 EC.visibility_of_element_located((self.zipcode))
             )
-            zipcode_input.clear()  # Clears any existing text
+            zipcode_input.clear()
             zipcode_input.send_keys(zipcode)
         except Exception as e:
             print("failed to set zipcode")
@@ -200,7 +200,7 @@ class Signup:
             mobilenumber_input = WebDriverWait(self.driver, 10).until(
                 EC.visibility_of_element_located((self.mobileNumber))
             )
-            mobilenumber_input.clear()  # Clears any existing text
+            mobilenumber_input.clear()
             mobilenumber_input.send_keys(mobile_number)
         except Exception as e:
             print("failed to set mobile number!")
@@ -210,7 +210,7 @@ class Signup:
             click_account = WebDriverWait(self.driver, 10).until(
                 EC.visibility_of_element_located((self.create_account))
             )
-            click_account.click()  # Clears any existing text
+            click_account.click()
         except Exception as e:
             print("failed to create account")
 

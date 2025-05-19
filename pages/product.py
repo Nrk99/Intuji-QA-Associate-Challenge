@@ -214,13 +214,10 @@ class Product:
 
     def verify_stock_availability(self):
         try:
-            # Wait for the stock status element to be visible
             stock_status_element = WebDriverWait(self.driver, 10).until(
                 EC.visibility_of_element_located((self.product_availability))
             )
-            # Retrieve and clean the text
             stock_status = stock_status_element.text.strip().lower()
-            # Check if the product is in stock
             if "in stock" in stock_status:
                 print("✅ Product is in stock.")
                 return True
