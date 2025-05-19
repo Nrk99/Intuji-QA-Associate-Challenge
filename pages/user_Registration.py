@@ -31,7 +31,7 @@ class UserRegistration:
             name_input = WebDriverWait(self.driver, 10).until(
                 EC.visibility_of_element_located((self.name_input))
             )
-            name_input.clear()  # Clears any existing text
+            name_input.clear()
             name_input.send_keys(name)
         except Exception as e:
             print("fialed to set name!")
@@ -56,8 +56,3 @@ class UserRegistration:
             email_input.click()
         except Exception as e:
             print("Failed to signup")
-
-    # def signup(self, name, email):
-    #     self.setName(name)
-    #     self.setEmail(email)
-    #     self.click_signUp()
