@@ -10,7 +10,7 @@
    python3 -m venv venv
    
 5. Activate the virtual environment
-   venv\Scripts\activate
+   sourcec venv\Scripts\activate
    
 #Install seleninum
   pip install selenium
