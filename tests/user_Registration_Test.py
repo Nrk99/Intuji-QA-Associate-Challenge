@@ -57,7 +57,6 @@ def test_user_registration(setup):
 
     signup_register.is_user_logged_in()
 
-    # def test_product(setup):
     prod = Product(setup)
     prod.click_product()
     prod.click_expand_women_dress()
@@ -90,4 +89,4 @@ def test_user_registration(setup):
     prod.enter_expiary_month()
     prod.enter_expiary_year()
     prod.pay_and_confirm_order()
-    # time.sleep(20)
+    prod.click_logout()
